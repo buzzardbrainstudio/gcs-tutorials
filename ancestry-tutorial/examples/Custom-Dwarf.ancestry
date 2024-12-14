@@ -1,0 +1,92 @@
+{
+	"type": "ancestry",
+	"version": 1,
+	"name": "Dwarf (Custom)",
+	"common_options": {
+		"height_formula": "43 + roll(2d6)",
+		"weight_formula": "130 + roll(6d6)",
+		"age_formula": "40 + roll(4d6)",
+		"hair_options": [
+			{
+				"weight": 10,
+				"value": "Black"
+			},
+			{
+				"weight": 8,
+				"value": "Brown"
+			},
+			{
+				"weight": 5,
+				"value": "Red"
+			}
+		],
+		"eye_options": [
+			{
+				"weight": 52,
+				"value": "Brown"
+			},
+			{
+				"weight": 18,
+				"value": "Blue"
+			},
+			{
+				"weight": 4,
+				"value": "Green"
+			}
+		],
+		"skin_options": [
+			{
+				"weight": 3,
+				"value": "Olive"
+			},
+			{
+				"weight": 3,
+				"value": "Light Brown"
+			},
+			{
+				"weight": 3,
+				"value": "Tan"
+			}
+		],
+		"handedness_options": [
+			{
+				"weight": 1,
+				"value": "Left"
+			},
+			{
+				"weight": 9,
+				"value": "Right"
+			}
+		],
+		"name_generators": [
+			"Custom-Dwarf-First-Male",
+			"Custom-Dwarf-Last"
+		]
+	},
+	"gender_options": [
+		{
+			"weight": 4,
+			"value": {
+				"name": "Male",
+				"height_formula": "43 + roll(2d6)",
+				"weight_formula": "130 + roll(6d6)",
+				"name_generators": [
+					"Custom-Dwarf-First-Male",
+					"Custom-Dwarf-Last"
+				]
+			}
+		},
+		{
+			"weight": 1,
+			"value": {
+				"name": "Female",
+				"height_formula": "41 + roll(2d6)",
+				"weight_formula": "105 + roll(6d6)",
+				"name_generators": [
+					"Custom-Dwarf-First-Female",
+					"Custom-Dwarf-Last"
+				]
+			}
+		}
+	]
+}
